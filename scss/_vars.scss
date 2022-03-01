@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Libre+Franklin:wght@400;700&family=Poppins:wght@400;700&display=swap");
+//Шрифты
+$lato: "Lato", sans-serif;
+$libre-franklin: "Libre Franklin", sans-serif;
+$poppins: "Poppins", sans-serif;
+//Цвета
+$white: #ffffff;
+$black: #000000;
+$gray: #6c6c6c;
+$light-gray: #dbdbdb;
+$light-gray2: #f5f5f5;
+$red: #ac1313;
+$pink: #d77474;
+//Миксины
+@mixin and-icon {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 1.187em;
+    height: 1.416em;
+    background: url(../img/icon.svg) no-repeat center / contain;
+    position: absolute;
+    top: -0.52em;
+    right: -1.25em;
+  }
+}
